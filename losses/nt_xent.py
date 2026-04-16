@@ -21,7 +21,7 @@ class NTXentLoss(nn.Module):
         device      : 'cuda' or 'cpu'
     """
 
-    def __init__(self, temperature: float = 0.5, device: str = "cuda"):
+    def __init__(self, temperature: float = 0.1, device: str = "cuda"):
         super().__init__()
         self.temperature = temperature
         self.device      = device

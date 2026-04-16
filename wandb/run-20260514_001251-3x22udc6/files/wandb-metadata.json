@@ -1,0 +1,50 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2026-05-13T23:12:51.071039Z",
+  "args":  [
+    "--data_dir",
+    "C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT",
+    "--epochs",
+    "200",
+    "--batch_size",
+    "64",
+    "--accum_steps",
+    "4",
+    "--lr",
+    "0.1"
+  ],
+  "program":  "-m scripts.train_ssl_v2",
+  "git":  {
+    "remote":  "git@github.com:AZ1004/PULSE.git",
+    "commit":  "4feaca0b38c8e757442b579b0dda7ffb36a6b0ac"
+  },
+  "email":  "asmaazizaan@gmail.com",
+  "root":  "C:\\Users\\asmaa\\PULSE",
+  "host":  "Asmaa_Omen",
+  "executable":  "C:\\Users\\asmaa\\PULSE\\.venv\\Scripts\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1022936215552",
+      "used":  "793626120192"
+    }
+  },
+  "memory":  {
+    "total":  "16858472448"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal":  "6439305216",
+      "cudaCores":  2560,
+      "architecture":  "Ada",
+      "uuid":  "GPU-5d1c9467-11c7-4ee8-6b7d-1a0cbc328156"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "03widtne61dwb3vjb9p2322aahd7ybv2"
+}

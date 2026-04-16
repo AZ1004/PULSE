@@ -1,0 +1,21 @@
+BUSIDataset | root: C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+  Total samples : 780
+  benign       : 437
+  malignant    : 210
+  normal       : 133
+
+── Label fraction: 10% ──────────────────────
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 298, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 274, in main
+    summary = run_kfold(args, dataset, label_frac=frac)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 216, in run_kfold
+    encoder    = load_encoder(args.checkpoint, args.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 80, in load_encoder
+    from models.simclr import SimCLREncoder
+ImportError: cannot import name 'SimCLREncoder' from 'models.simclr' (C:\Users\asmaa\PULSE\models\simclr.py)

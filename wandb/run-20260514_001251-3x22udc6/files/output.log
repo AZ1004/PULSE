@@ -1,0 +1,526 @@
+DEBUG: Train samples: 624, Val samples: 78
+[data]  SSL train=624 | eval train=624 | val=78 | test=78
+[data]  micro_bs=64  accum_steps=4  effective_bs=256
+[model] resnet50  feat_dim=2048  proj=2048->128  28.0M params
+[optim] LARS  lr=0.1000  effective_bs=256
+[epoch 000/200]  loss=6.6352  loss_smooth=6.6352  grad_norm=nan  lr=0.01000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 001/200]  loss=6.6144  loss_smooth=6.6348  grad_norm=nan  lr=0.02000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 002/200]  loss=6.3687  loss_smooth=6.6295  grad_norm=1223.451  lr=0.03000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 003/200]  loss=5.8140  loss_smooth=6.6132  grad_norm=inf  lr=0.04000  3 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 004/200]  loss=5.7759  loss_smooth=6.5964  grad_norm=955.626  lr=0.05000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 005/200]  loss=5.5597  loss_smooth=6.5757  grad_norm=915.349  lr=0.06000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 006/200]  loss=5.4335  loss_smooth=6.5529  grad_norm=699.457  lr=0.07000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 007/200]  loss=5.2748  loss_smooth=6.5273  grad_norm=888.905  lr=0.08000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 008/200]  loss=5.3013  loss_smooth=6.5028  grad_norm=928.689  lr=0.09000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 009/200]  loss=5.2210  loss_smooth=6.4771  grad_norm=1059.047  lr=0.10000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 010/200]  loss=5.3011  loss_smooth=6.4536  grad_norm=664.999  lr=0.10000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 011/200]  loss=5.3508  loss_smooth=6.4316  grad_norm=955.657  lr=0.09999  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 012/200]  loss=5.3877  loss_smooth=6.4107  grad_norm=628.027  lr=0.09997  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 013/200]  loss=5.2949  loss_smooth=6.3884  grad_norm=718.307  lr=0.09994  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 014/200]  loss=5.3210  loss_smooth=6.3670  grad_norm=839.568  lr=0.09989  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 015/200]  loss=5.1756  loss_smooth=6.3432  grad_norm=578.447  lr=0.09983  3 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 016/200]  loss=5.0208  loss_smooth=6.3168  grad_norm=584.670  lr=0.09975  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 017/200]  loss=5.1019  loss_smooth=6.2925  grad_norm=576.989  lr=0.09967  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 018/200]  loss=5.0296  loss_smooth=6.2672  grad_norm=465.097  lr=0.09956  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 019/200]  loss=4.9338  loss_smooth=6.2405  grad_norm=540.525  lr=0.09945  4 img/s
+[linear eval] Extracting features...
+[linear eval] Head initialised fresh
+[linear eval @ epoch 19]  val_acc=0.5128  best=0.5128
+[early stop] no improvement for 1 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 020/200]  loss=4.9701  loss_smooth=6.2151  grad_norm=476.485  lr=0.09932  5 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 021/200]  loss=4.9113  loss_smooth=6.1890  grad_norm=458.912  lr=0.09918  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 022/200]  loss=4.9292  loss_smooth=6.1638  grad_norm=466.549  lr=0.09902  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 023/200]  loss=4.6412  loss_smooth=6.1334  grad_norm=358.171  lr=0.09885  5 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 024/200]  loss=4.7872  loss_smooth=6.1065  grad_norm=327.759  lr=0.09867  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 025/200]  loss=4.7193  loss_smooth=6.0787  grad_norm=284.964  lr=0.09847  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 026/200]  loss=4.7146  loss_smooth=6.0514  grad_norm=263.648  lr=0.09826  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 027/200]  loss=4.5797  loss_smooth=6.0220  grad_norm=327.779  lr=0.09804  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 028/200]  loss=4.4334  loss_smooth=5.9902  grad_norm=212.682  lr=0.09780  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 029/200]  loss=4.5040  loss_smooth=5.9605  grad_norm=209.060  lr=0.09755  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 030/200]  loss=4.4193  loss_smooth=5.9297  grad_norm=181.607  lr=0.09729  7 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 031/200]  loss=4.2449  loss_smooth=5.8960  grad_norm=181.247  lr=0.09702  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 032/200]  loss=4.1222  loss_smooth=5.8605  grad_norm=124.242  lr=0.09673  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 033/200]  loss=3.9545  loss_smooth=5.8224  grad_norm=128.213  lr=0.09643  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 034/200]  loss=3.8304  loss_smooth=5.7826  grad_norm=132.420  lr=0.09611  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 035/200]  loss=3.8840  loss_smooth=5.7446  grad_norm=108.520  lr=0.09579  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 036/200]  loss=3.7237  loss_smooth=5.7042  grad_norm=89.185  lr=0.09545  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 037/200]  loss=3.4854  loss_smooth=5.6598  grad_norm=70.124  lr=0.09510  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 038/200]  loss=3.2835  loss_smooth=5.6123  grad_norm=68.866  lr=0.09474  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 039/200]  loss=3.3861  loss_smooth=5.5677  grad_norm=51.645  lr=0.09436  4 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 39]  val_acc=0.5128  best=0.5128
+[early stop] no improvement for 2 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 040/200]  loss=3.1589  loss_smooth=5.5196  grad_norm=34.681  lr=0.09397  8 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 041/200]  loss=3.0132  loss_smooth=5.4694  grad_norm=28.618  lr=0.09357  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 042/200]  loss=2.8126  loss_smooth=5.4163  grad_norm=23.552  lr=0.09316  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 043/200]  loss=2.7242  loss_smooth=5.3625  grad_norm=18.376  lr=0.09274  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 044/200]  loss=2.7832  loss_smooth=5.3109  grad_norm=21.505  lr=0.09230  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 045/200]  loss=2.6014  loss_smooth=5.2567  grad_norm=16.580  lr=0.09186  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 046/200]  loss=2.3901  loss_smooth=5.1994  grad_norm=13.811  lr=0.09140  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 047/200]  loss=2.2570  loss_smooth=5.1405  grad_norm=12.293  lr=0.09093  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 048/200]  loss=2.2085  loss_smooth=5.0819  grad_norm=10.631  lr=0.09045  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 049/200]  loss=1.9133  loss_smooth=5.0185  grad_norm=9.766  lr=0.08996  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_epoch_0050.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 050/200]  loss=1.8396  loss_smooth=4.9549  grad_norm=10.816  lr=0.08946  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 051/200]  loss=1.9354  loss_smooth=4.8945  grad_norm=10.063  lr=0.08894  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 052/200]  loss=1.8145  loss_smooth=4.8329  grad_norm=8.280  lr=0.08842  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 053/200]  loss=1.6060  loss_smooth=4.7684  grad_norm=7.369  lr=0.08789  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 054/200]  loss=1.6601  loss_smooth=4.7062  grad_norm=7.162  lr=0.08734  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 055/200]  loss=1.3828  loss_smooth=4.6398  grad_norm=6.157  lr=0.08679  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 056/200]  loss=1.3864  loss_smooth=4.5747  grad_norm=6.103  lr=0.08622  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 057/200]  loss=1.3279  loss_smooth=4.5098  grad_norm=7.797  lr=0.08565  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 058/200]  loss=1.3054  loss_smooth=4.4457  grad_norm=5.871  lr=0.08506  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 059/200]  loss=1.2816  loss_smooth=4.3824  grad_norm=6.480  lr=0.08447  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 59]  val_acc=0.5769  best=0.5769
+[early stop] no improvement for 3 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 060/200]  loss=1.1786  loss_smooth=4.3183  grad_norm=6.227  lr=0.08386  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 061/200]  loss=1.1642  loss_smooth=4.2552  grad_norm=5.248  lr=0.08325  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 062/200]  loss=1.2103  loss_smooth=4.1943  grad_norm=7.925  lr=0.08263  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 063/200]  loss=1.0541  loss_smooth=4.1315  grad_norm=7.172  lr=0.08200  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 064/200]  loss=0.9948  loss_smooth=4.0688  grad_norm=5.066  lr=0.08136  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 065/200]  loss=0.9671  loss_smooth=4.0068  grad_norm=5.153  lr=0.08071  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 066/200]  loss=0.9323  loss_smooth=3.9453  grad_norm=4.822  lr=0.08005  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 067/200]  loss=0.8423  loss_smooth=3.8832  grad_norm=4.494  lr=0.07939  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 068/200]  loss=0.8594  loss_smooth=3.8227  grad_norm=5.351  lr=0.07872  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 069/200]  loss=0.7899  loss_smooth=3.7621  grad_norm=6.931  lr=0.07804  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 070/200]  loss=0.8126  loss_smooth=3.7031  grad_norm=7.701  lr=0.07735  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 071/200]  loss=0.7946  loss_smooth=3.6449  grad_norm=4.713  lr=0.07665  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 072/200]  loss=0.8513  loss_smooth=3.5890  grad_norm=5.315  lr=0.07595  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 073/200]  loss=0.7167  loss_smooth=3.5316  grad_norm=4.948  lr=0.07524  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 074/200]  loss=0.6886  loss_smooth=3.4747  grad_norm=3.981  lr=0.07452  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 075/200]  loss=0.6678  loss_smooth=3.4186  grad_norm=3.861  lr=0.07380  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 076/200]  loss=0.6409  loss_smooth=3.3630  grad_norm=3.332  lr=0.07307  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 077/200]  loss=0.7136  loss_smooth=3.3101  grad_norm=6.539  lr=0.07233  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 078/200]  loss=0.6311  loss_smooth=3.2565  grad_norm=3.752  lr=0.07159  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 079/200]  loss=0.5405  loss_smooth=3.2022  grad_norm=3.365  lr=0.07084  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 79]  val_acc=0.5641  best=0.5769
+[early stop] no improvement for 4 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 080/200]  loss=0.5794  loss_smooth=3.1497  grad_norm=2.967  lr=0.07008  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 081/200]  loss=0.6055  loss_smooth=3.0988  grad_norm=3.338  lr=0.06932  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 082/200]  loss=0.5437  loss_smooth=3.0477  grad_norm=3.120  lr=0.06856  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 083/200]  loss=0.5395  loss_smooth=2.9976  grad_norm=3.147  lr=0.06779  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 084/200]  loss=0.5334  loss_smooth=2.9483  grad_norm=2.751  lr=0.06701  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 085/200]  loss=0.5105  loss_smooth=2.8995  grad_norm=3.884  lr=0.06623  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 086/200]  loss=0.5174  loss_smooth=2.8519  grad_norm=3.744  lr=0.06545  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 087/200]  loss=0.4677  loss_smooth=2.8042  grad_norm=3.060  lr=0.06466  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 088/200]  loss=0.4769  loss_smooth=2.7576  grad_norm=2.900  lr=0.06387  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 089/200]  loss=0.4437  loss_smooth=2.7114  grad_norm=2.888  lr=0.06307  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 090/200]  loss=0.4040  loss_smooth=2.6652  grad_norm=2.026  lr=0.06227  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 091/200]  loss=0.4174  loss_smooth=2.6203  grad_norm=2.585  lr=0.06147  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 092/200]  loss=0.4098  loss_smooth=2.5760  grad_norm=2.404  lr=0.06066  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 093/200]  loss=0.4279  loss_smooth=2.5331  grad_norm=2.760  lr=0.05986  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 094/200]  loss=0.3342  loss_smooth=2.4891  grad_norm=3.300  lr=0.05904  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 095/200]  loss=0.3913  loss_smooth=2.4472  grad_norm=2.465  lr=0.05823  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 096/200]  loss=0.3696  loss_smooth=2.4056  grad_norm=2.217  lr=0.05741  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 097/200]  loss=0.3948  loss_smooth=2.3654  grad_norm=2.277  lr=0.05659  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 098/200]  loss=0.3816  loss_smooth=2.3257  grad_norm=2.062  lr=0.05577  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 099/200]  loss=0.3481  loss_smooth=2.2862  grad_norm=2.057  lr=0.05495  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 99]  val_acc=0.5769  best=0.5769
+[early stop] no improvement for 5 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_epoch_0100.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 100/200]  loss=0.3311  loss_smooth=2.2471  grad_norm=2.019  lr=0.05413  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 101/200]  loss=0.3437  loss_smooth=2.2090  grad_norm=1.766  lr=0.05330  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 102/200]  loss=0.3653  loss_smooth=2.1721  grad_norm=1.675  lr=0.05248  5 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 103/200]  loss=0.2638  loss_smooth=2.1339  grad_norm=1.598  lr=0.05165  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 104/200]  loss=0.2731  loss_smooth=2.0967  grad_norm=1.566  lr=0.05083  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 105/200]  loss=0.2661  loss_smooth=2.0601  grad_norm=1.622  lr=0.05000  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 106/200]  loss=0.2878  loss_smooth=2.0247  grad_norm=1.780  lr=0.04917  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 107/200]  loss=0.2768  loss_smooth=1.9897  grad_norm=2.064  lr=0.04835  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 108/200]  loss=0.2990  loss_smooth=1.9559  grad_norm=2.222  lr=0.04752  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 109/200]  loss=0.2837  loss_smooth=1.9225  grad_norm=2.138  lr=0.04670  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 110/200]  loss=0.2583  loss_smooth=1.8892  grad_norm=1.900  lr=0.04587  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 111/200]  loss=0.2829  loss_smooth=1.8571  grad_norm=2.439  lr=0.04505  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 112/200]  loss=0.2783  loss_smooth=1.8255  grad_norm=1.691  lr=0.04423  5 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 113/200]  loss=0.2803  loss_smooth=1.7946  grad_norm=1.771  lr=0.04341  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 114/200]  loss=0.2662  loss_smooth=1.7640  grad_norm=1.499  lr=0.04259  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 115/200]  loss=0.2396  loss_smooth=1.7335  grad_norm=1.425  lr=0.04177  4 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 116/200]  loss=0.2477  loss_smooth=1.7038  grad_norm=1.722  lr=0.04096  10 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 117/200]  loss=0.2029  loss_smooth=1.6738  grad_norm=1.352  lr=0.04014  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 118/200]  loss=0.2409  loss_smooth=1.6451  grad_norm=1.362  lr=0.03934  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 119/200]  loss=0.2477  loss_smooth=1.6172  grad_norm=1.597  lr=0.03853  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 119]  val_acc=0.5897  best=0.5897
+[early stop] no improvement for 6 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 120/200]  loss=0.2453  loss_smooth=1.5897  grad_norm=1.376  lr=0.03773  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 121/200]  loss=0.2389  loss_smooth=1.5627  grad_norm=1.360  lr=0.03693  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 122/200]  loss=0.1901  loss_smooth=1.5353  grad_norm=1.176  lr=0.03613  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 123/200]  loss=0.2315  loss_smooth=1.5092  grad_norm=1.581  lr=0.03534  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 124/200]  loss=0.2019  loss_smooth=1.4830  grad_norm=1.255  lr=0.03455  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 125/200]  loss=0.1915  loss_smooth=1.4572  grad_norm=1.159  lr=0.03377  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 126/200]  loss=0.2316  loss_smooth=1.4327  grad_norm=1.594  lr=0.03299  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 127/200]  loss=0.1976  loss_smooth=1.4080  grad_norm=1.257  lr=0.03221  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 128/200]  loss=0.2008  loss_smooth=1.3839  grad_norm=1.289  lr=0.03144  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 129/200]  loss=0.2110  loss_smooth=1.3604  grad_norm=1.343  lr=0.03068  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 130/200]  loss=0.1740  loss_smooth=1.3367  grad_norm=1.098  lr=0.02992  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 131/200]  loss=0.1902  loss_smooth=1.3137  grad_norm=1.035  lr=0.02916  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 132/200]  loss=0.2032  loss_smooth=1.2915  grad_norm=1.094  lr=0.02841  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 133/200]  loss=0.1868  loss_smooth=1.2694  grad_norm=1.276  lr=0.02767  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 134/200]  loss=0.1632  loss_smooth=1.2473  grad_norm=1.234  lr=0.02693  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 135/200]  loss=0.1683  loss_smooth=1.2257  grad_norm=1.137  lr=0.02620  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 136/200]  loss=0.1763  loss_smooth=1.2047  grad_norm=1.081  lr=0.02548  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 137/200]  loss=0.1880  loss_smooth=1.1844  grad_norm=1.281  lr=0.02476  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 138/200]  loss=0.1718  loss_smooth=1.1642  grad_norm=1.371  lr=0.02405  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 139/200]  loss=0.1682  loss_smooth=1.1442  grad_norm=1.315  lr=0.02335  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 139]  val_acc=0.6667  best=0.6667
+[early stop] no improvement for 7 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 140/200]  loss=0.2005  loss_smooth=1.1254  grad_norm=1.214  lr=0.02265  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 141/200]  loss=0.1746  loss_smooth=1.1063  grad_norm=1.069  lr=0.02196  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 142/200]  loss=0.1699  loss_smooth=1.0876  grad_norm=0.825  lr=0.02128  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 143/200]  loss=0.1638  loss_smooth=1.0691  grad_norm=1.191  lr=0.02061  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 144/200]  loss=0.1702  loss_smooth=1.0512  grad_norm=1.055  lr=0.01995  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 145/200]  loss=0.1693  loss_smooth=1.0335  grad_norm=1.157  lr=0.01929  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 146/200]  loss=0.1621  loss_smooth=1.0161  grad_norm=1.097  lr=0.01864  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 147/200]  loss=0.1721  loss_smooth=0.9992  grad_norm=1.105  lr=0.01800  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 148/200]  loss=0.1588  loss_smooth=0.9824  grad_norm=1.085  lr=0.01737  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 149/200]  loss=0.1659  loss_smooth=0.9661  grad_norm=0.868  lr=0.01675  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_epoch_0150.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 150/200]  loss=0.1605  loss_smooth=0.9500  grad_norm=1.076  lr=0.01614  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 151/200]  loss=0.1492  loss_smooth=0.9340  grad_norm=0.968  lr=0.01553  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 152/200]  loss=0.1542  loss_smooth=0.9184  grad_norm=1.048  lr=0.01494  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 153/200]  loss=0.1681  loss_smooth=0.9034  grad_norm=0.915  lr=0.01435  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 154/200]  loss=0.1448  loss_smooth=0.8882  grad_norm=0.784  lr=0.01378  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 155/200]  loss=0.1217  loss_smooth=0.8729  grad_norm=0.737  lr=0.01321  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 156/200]  loss=0.1388  loss_smooth=0.8582  grad_norm=1.022  lr=0.01266  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 157/200]  loss=0.1783  loss_smooth=0.8446  grad_norm=1.074  lr=0.01211  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 158/200]  loss=0.1475  loss_smooth=0.8306  grad_norm=0.846  lr=0.01158  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 159/200]  loss=0.1508  loss_smooth=0.8170  grad_norm=0.850  lr=0.01106  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 159]  val_acc=0.7308  best=0.7308
+[early stop] no improvement for 8 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 160/200]  loss=0.1396  loss_smooth=0.8035  grad_norm=0.792  lr=0.01054  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 161/200]  loss=0.1564  loss_smooth=0.7905  grad_norm=0.943  lr=0.01004  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 162/200]  loss=0.1344  loss_smooth=0.7774  grad_norm=1.331  lr=0.00955  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 163/200]  loss=0.1399  loss_smooth=0.7647  grad_norm=0.833  lr=0.00907  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 164/200]  loss=0.1432  loss_smooth=0.7522  grad_norm=0.808  lr=0.00860  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 165/200]  loss=0.1388  loss_smooth=0.7400  grad_norm=0.843  lr=0.00814  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 166/200]  loss=0.1355  loss_smooth=0.7279  grad_norm=0.680  lr=0.00770  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 167/200]  loss=0.1610  loss_smooth=0.7165  grad_norm=0.909  lr=0.00726  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 168/200]  loss=0.1426  loss_smooth=0.7051  grad_norm=0.845  lr=0.00684  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 169/200]  loss=0.1343  loss_smooth=0.6937  grad_norm=0.669  lr=0.00643  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 170/200]  loss=0.1342  loss_smooth=0.6825  grad_norm=0.695  lr=0.00603  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 171/200]  loss=0.1389  loss_smooth=0.6716  grad_norm=0.921  lr=0.00564  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 172/200]  loss=0.1311  loss_smooth=0.6608  grad_norm=0.922  lr=0.00526  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 173/200]  loss=0.1345  loss_smooth=0.6503  grad_norm=0.776  lr=0.00490  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 174/200]  loss=0.1424  loss_smooth=0.6401  grad_norm=0.894  lr=0.00455  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 175/200]  loss=0.1053  loss_smooth=0.6294  grad_norm=0.615  lr=0.00421  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_best_loss.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 176/200]  loss=0.1292  loss_smooth=0.6194  grad_norm=0.703  lr=0.00389  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 177/200]  loss=0.1457  loss_smooth=0.6099  grad_norm=0.759  lr=0.00357  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 178/200]  loss=0.1363  loss_smooth=0.6004  grad_norm=0.729  lr=0.00327  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 179/200]  loss=0.1655  loss_smooth=0.5917  grad_norm=0.865  lr=0.00298  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 179]  val_acc=0.6795  best=0.7308
+[early stop] no improvement for 9 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 180/200]  loss=0.1106  loss_smooth=0.5821  grad_norm=0.740  lr=0.00271  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 181/200]  loss=0.1133  loss_smooth=0.5728  grad_norm=0.761  lr=0.00245  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 182/200]  loss=0.1248  loss_smooth=0.5638  grad_norm=0.789  lr=0.00220  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 183/200]  loss=0.1265  loss_smooth=0.5550  grad_norm=0.722  lr=0.00196  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 184/200]  loss=0.1315  loss_smooth=0.5466  grad_norm=0.647  lr=0.00174  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 185/200]  loss=0.1221  loss_smooth=0.5381  grad_norm=0.606  lr=0.00153  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 186/200]  loss=0.1303  loss_smooth=0.5299  grad_norm=0.886  lr=0.00133  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 187/200]  loss=0.1671  loss_smooth=0.5227  grad_norm=0.904  lr=0.00115  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 188/200]  loss=0.1514  loss_smooth=0.5152  grad_norm=0.997  lr=0.00098  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 189/200]  loss=0.1453  loss_smooth=0.5079  grad_norm=0.646  lr=0.00082  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 190/200]  loss=0.1298  loss_smooth=0.5003  grad_norm=0.614  lr=0.00068  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 191/200]  loss=0.1574  loss_smooth=0.4934  grad_norm=0.808  lr=0.00055  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 192/200]  loss=0.1303  loss_smooth=0.4862  grad_norm=0.764  lr=0.00044  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 193/200]  loss=0.1349  loss_smooth=0.4791  grad_norm=0.702  lr=0.00033  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 194/200]  loss=0.1741  loss_smooth=0.4730  grad_norm=0.782  lr=0.00025  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 195/200]  loss=0.1441  loss_smooth=0.4665  grad_norm=0.770  lr=0.00017  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 196/200]  loss=0.1492  loss_smooth=0.4601  grad_norm=0.950  lr=0.00011  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 197/200]  loss=0.1487  loss_smooth=0.4539  grad_norm=0.821  lr=0.00006  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 198/200]  loss=0.1448  loss_smooth=0.4477  grad_norm=0.780  lr=0.00003  11 img/s
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+[epoch 199/200]  loss=0.1240  loss_smooth=0.4412  grad_norm=0.754  lr=0.00001  11 img/s
+[linear eval] Extracting features...
+[linear eval] Head warm-started from previous probe
+[linear eval @ epoch 199]  val_acc=0.6795  best=0.7308
+[early stop] no improvement for 10 eval(s)
+[ckpt] saved -> checkpoints/simclr\simclr_epoch_0200.pt
+[ckpt] saved -> checkpoints/simclr\simclr_latest.pt
+
+[done]  best_loss=0.1053  best_linear_acc=0.7308

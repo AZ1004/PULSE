@@ -1,0 +1,9 @@
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to C:\Users\asmaa/.cache\torch\hub\checkpoints\resnet50-0676ba61.pth
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97.8M/97.8M [00:08<00:00, 12.0MB/s]
+Fold 1 | Best AUC: 0.9630 | Final Acc: 0.8654
+Fold 2 | Best AUC: 0.9523 | Final Acc: 0.8782
+Fold 3 | Best AUC: 0.9714 | Final Acc: 0.8974
+Fold 4 | Best AUC: 0.9750 | Final Acc: 0.8718
+Fold 5 | Best AUC: 0.9552 | Final Acc: 0.8333
+
+Baseline AUC: 0.9634 ± 0.0088

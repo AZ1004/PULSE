@@ -1,0 +1,21 @@
+BUSIDataset | root: C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+  Total samples : 780
+  benign       : 437
+  malignant    : 210
+  normal       : 133
+
+── Label fraction: 10% ──────────────────────
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 296, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 272, in main
+    summary = run_kfold(args, dataset, label_frac=frac)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 214, in run_kfold
+    encoder    = load_encoder(args.checkpoint, args.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 80, in load_encoder
+    from train_ssl_v2 import SimCLREncoder
+ModuleNotFoundError: No module named 'train_ssl_v2'

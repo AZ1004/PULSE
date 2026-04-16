@@ -92,10 +92,10 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--accum_steps",  type=int,   default=4,
                    help="Gradient accumulation steps. "
                         "Effective batch = batch_size x accum_steps")
-    p.add_argument("--lr",           type=float, default=0.6,
+    p.add_argument("--lr",           type=float, default=0.3,
                    help="Base LR; scaled by effective_batch / 256")
     p.add_argument("--weight_decay", type=float, default=1e-4)
-    p.add_argument("--temperature",  type=float, default=0.5,
+    p.add_argument("--temperature",  type=float, default=0.1,
                    help="NT-Xent temperature tau")
     p.add_argument("--warmup_epochs",type=int,   default=10)
     p.add_argument("--min_lr",       type=float, default=0.0)
@@ -123,7 +123,7 @@ def parse_args() -> argparse.Namespace:
                    help="Max gradient norm. 0 = disabled.")
 
     # Infra
-    p.add_argument("--num_workers",  type=int,   default=4)
+    p.add_argument("--num_workers",  type=int,   default=0)  #set as 4 for toubkal
     p.add_argument("--seed",         type=int,   default=42)
     p.add_argument("--compile",      action="store_true",
                    help="torch.compile the model (PyTorch >= 2.0, Toubkal)")
@@ -237,19 +237,29 @@ def build_optimizer(model: nn.Module, args: argparse.Namespace) -> torch.optim.O
     Falls back to SGD if torch-optimizer is not installed.
     LR is scaled by effective_batch_size / 256.
     """
+    # Exclude BN and Biases from weight decay
+    params = []
+    for name, param in model.named_parameters():
+        if not param.requires_grad:
+            continue
+        if "bn" in name.lower() or "bias" in name.lower():
+            params.append({"params": [param], "weight_decay": 0.0})
+        else:
+            params.append({"params": [param]})
+
     effective_bs = args.batch_size * args.accum_steps
     scaled_lr    = args.lr * effective_bs / 256.0
 
     try:
         from torch_optimizer import LARS
-        optimizer = LARS(model.parameters(), lr=scaled_lr,
+        optimizer = LARS(params, lr=scaled_lr,
                          weight_decay=args.weight_decay, momentum=0.9)
         print(f"[optim] LARS  lr={scaled_lr:.4f}  effective_bs={effective_bs}")
     except ImportError:
-        optimizer = torch.optim.SGD(model.parameters(), lr=scaled_lr,
+        optimizer = torch.optim.SGD(params, lr=scaled_lr,
                                     momentum=0.9, weight_decay=args.weight_decay)
-        print(f"[optim] SGD (LARS not found -- pip install torch-optimizer)  "
-              f"lr={scaled_lr:.4f}  effective_bs={effective_bs}")
+        print(f"!!! [WARNING] LARS not found. Using SGD with lr={scaled_lr:.4f}. "
+              "If loss diverges, lower --lr to 0.1 or install torch-optimizer.")
 
     return optimizer
 
@@ -282,7 +292,7 @@ def train_one_epoch(model: SimCLREncoder,
                     device: torch.device,
                     epoch: int,
                     args: argparse.Namespace,
-                    scaler: Optional[torch.cuda.amp.GradScaler],
+                    scaler: Optional[torch.amp.GradScaler("cuda")],
                     loss_ema: float) -> tuple:
     """
     Returns (metrics_dict, updated_loss_ema).
@@ -388,11 +398,18 @@ def extract_features(encoder: SimCLREncoder, loader: DataLoader,
     encoder.eval()
     feats, labels = [], []
     for batch in loader:
-        imgs = batch[0]
-        ys   = batch[1] if len(batch) == 2 else batch[2]
-        h, _ = encoder(imgs.to(device))
+        if len(batch) == 3:
+            imgs, _, ys = batch
+        else:
+            imgs, ys = batch
+        imgs = imgs.to(device)
+        h = encoder(imgs)
+        if isinstance(h, (tuple, list)):
+            h = h[0]
         feats.append(h.cpu())
         labels.append(ys)
+        if not feats:
+            raise ValueError("No features extracted! Check if your loader is empty.")
     return torch.cat(feats), torch.cat(labels)
 
 
@@ -531,6 +548,18 @@ class ContrastiveTransformations:
         return [self.base_transforms(x) for _ in range(self.n_views)]
     # This class is unused and can be removed.
     pass
+
+# Helper for BUSIDatasetSSL to generate dual views
+class _DualView:
+    """
+    Thin wrapper so BUSIDatasetSSL gets a callable that returns (view1, view2).
+    BUSIDatasetSSL expects: view1, view2 = ssl_transform(image)
+    """
+    def __init__(self, aug: BUSIAugmentation):
+        self.aug = aug
+    
+    def __call__(self, img):
+        return self.aug(img), self.aug(img)
     
 def build_loaders(args: argparse.Namespace):
     """
@@ -538,18 +567,7 @@ def build_loaders(args: argparse.Namespace):
     BUSIDataset(ssl=True)  -> (view1, view2, label)  -- augmented dual-view
     BUSIDataset(ssl=False) -> (img,   img,   label)  -- clean resize/normalise
     """
-    # Helper for BUSIDatasetSSL to generate dual views
-    class _DualView:
-        """
-        Thin wrapper so BUSIDatasetSSL gets a callable that returns (view1, view2).
-        BUSIDatasetSSL expects: view1, view2 = ssl_transform(image)
-        """
-        def __init__(self, aug: BUSIAugmentation):
-            self.aug = aug
-     
-        def __call__(self, img):
-            return self.aug(img), self.aug(img)
-    
+
     import torchvision.transforms as T
 
     eval_transform = T.Compose([
@@ -558,10 +576,9 @@ def build_loaders(args: argparse.Namespace):
         T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
 
-    # Base dataset with NO transform (BUSIDatasetSSL applies augmentation internally)
-    full_ssl = BUSIDataset(args.data_dir, transform=None)
+    
     # 1. Create the base dataset (this one takes the root path)
-    base_ssl_dataset = BUSIDataset(args.data_dir, transform=None)
+    base_ssl_dataset = BUSIDataset(args.data_dir, transform= None)
     # 2. Create the SSL augmenter and wrap it for dual views
     ssl_augmenter = BUSIAugmentation(image_size=224)
     dual_view_transform = _DualView(ssl_augmenter)
@@ -574,6 +591,8 @@ def build_loaders(args: argparse.Namespace):
     n_val   = int(0.1 * n)
     n_test  = n - n_train - n_val
 
+    print(f"DEBUG: Train samples: {n_train}, Val samples: {n_val}")
+
     gen = torch.Generator().manual_seed(args.seed)
     tr_idx, val_idx, te_idx = random_split(
         range(n), [n_train, n_val, n_test], generator=gen)
@@ -583,12 +602,13 @@ def build_loaders(args: argparse.Namespace):
     ev_val    = Subset(full_eval, list(val_idx))
     ev_test   = Subset(full_eval, list(te_idx))
 
-    kw = dict(num_workers=args.num_workers, pin_memory=True, drop_last=True)
+    ssl_kw  = dict(num_workers=0, pin_memory=True, drop_last=True)
+    eval_kw = dict(num_workers=0, pin_memory=True, drop_last=False)
 
     ssl_loader   = DataLoader(ssl_train, batch_size=args.batch_size,
-                              shuffle=True,  **kw)
-    eval_tr_ldr  = DataLoader(ev_train,  batch_size=512, shuffle=False, **kw)
-    eval_val_ldr = DataLoader(ev_val,    batch_size=512, shuffle=False, **kw)
+                              shuffle=True,  **ssl_kw)
+    eval_tr_ldr  = DataLoader(ev_train,  batch_size=512, shuffle=False, **eval_kw)
+    eval_val_ldr = DataLoader(ev_val,    batch_size=512, shuffle=False, **eval_kw)
 
     eff_bs = args.batch_size * args.accum_steps
     print(f"[data]  SSL train={len(ssl_train)} | eval train={len(ev_train)} "
@@ -646,7 +666,7 @@ def main():
     # ── Loss / Optimiser / AMP scaler ─────────────────────────────────────────
     criterion = NTXentLoss(temperature=args.temperature, device=device)
     optimizer = build_optimizer(model, args)
-    scaler    = torch.cuda.amp.GradScaler() if device.type == "cuda" else None
+    scaler    = torch.amp.GradScaler("cuda") if device.type == "cuda" else None
 
     # ── Persistent state ──────────────────────────────────────────────────────
     start_epoch      = 0
