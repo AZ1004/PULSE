@@ -1,0 +1,4 @@
+data:
+  root_path: "C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT"
+  batch_size: 32
+  image_size: 224

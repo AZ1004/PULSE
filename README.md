@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# EchoLearn
+Self-supervised pretraining (SimCLR/MAE)
+=======
+>>>>>>> temp-fix
 # PULSE 🫀
 ### Pretraining Ultrasound representations via Label-free Self-supervised Encoders
 
@@ -95,7 +102,11 @@ PULSE/
 ├── data/
 │   ├── README.md             # Download instructions
 │   └── dataset.py            # PyTorch Dataset class
+<<<<<<< HEAD
 ├── models/                   # Model checkpoints are versioned/managed via W&B Model Registry.
+=======
+├── models/
+>>>>>>> temp-fix
 │   ├── simclr.py             # SimCLR encoder + projection head
 │   ├── mae.py                # MAE encoder + decoder
 │   └── downstream.py         # Linear probe + fine-tune heads
@@ -216,3 +227,7 @@ If you use this code or find this work useful, please cite:
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+<<<<<<< HEAD
+=======
+>>>>>>> d489d86 (Added initial README file)
+>>>>>>> temp-fix

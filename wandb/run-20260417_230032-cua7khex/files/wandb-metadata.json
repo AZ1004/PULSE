@@ -1,0 +1,17 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2026-04-17T22:00:32.780703Z",
+  "program":  "c:\\Users\\asmaa\\PULSE\\scripts\\train_simclr.py",
+  "codePath":  "scripts\\train_simclr.py",
+  "codePathLocal":  "scripts\\train_simclr.py",
+  "git":  {
+    "remote":  "git@github.com:AZ1004/PULSE.git",
+    "commit":  "dc119630c3743e874a9cc860b95ff03d2c395080"
+  },
+  "email":  "asmaazizaan@gmail.com",
+  "root":  "C:\\Users\\asmaa\\PULSE",
+  "host":  "Asmaa_Omen",
+  "executable":  "c:\\Users\\asmaa\\PULSE\\.venv\\Scripts\\python.exe",
+  "writerId":  "wxaahqv32nnxl3xnioal7krr6nx2xtgs"
+}

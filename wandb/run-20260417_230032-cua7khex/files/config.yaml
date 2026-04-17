@@ -1,0 +1,40 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            wxaahqv32nnxl3xnioal7krr6nx2xtgs:
+                codePath: scripts\train_simclr.py
+                codePathLocal: scripts\train_simclr.py
+                email: asmaazizaan@gmail.com
+                executable: c:\Users\asmaa\PULSE\.venv\Scripts\python.exe
+                git:
+                    commit: dc119630c3743e874a9cc860b95ff03d2c395080
+                    remote: git@github.com:AZ1004/PULSE.git
+                host: Asmaa_Omen
+                os: Windows-10-10.0.26200-SP0
+                program: c:\Users\asmaa\PULSE\scripts\train_simclr.py
+                python: CPython 3.11.4
+                root: C:\Users\asmaa\PULSE
+                startedAt: "2026-04-17T22:00:32.780703Z"
+                writerId: wxaahqv32nnxl3xnioal7krr6nx2xtgs
+        m: []
+        python_version: 3.11.4
+        t:
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.4
+            "5": 0.26.0
+            "8":
+                - 3
+            "12": 0.26.0
+            "13": windows-amd64
+architecture:
+    value: ResNet50
+batch_size:
+    value: 32
+dataset:
+    value: BUSI
+learning_rate:
+    value: 0.0003
