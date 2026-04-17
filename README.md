@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-# EchoLearn
-Self-supervised pretraining (SimCLR/MAE)
-=======
->>>>>>> temp-fix
 # PULSE 🫀
-### Pretraining Ultrasound representations via Label-free Self-supervised Encoders
+### Pretraining Ultrasound Large-scale Self-supervised Encoders.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-orange.svg)](https://pytorch.org/)
