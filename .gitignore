@@ -1,0 +1,9 @@
+# Data
+data/BUSI_dataset/
+*.zip
+*.tar
+
+# Python/IDE
+__pycache__/
+.ipynb_checkpoints/
+.env
