@@ -103,10 +103,14 @@ PULSE/
 │   ├── README.md             # Download instructions
 │   └── dataset.py            # PyTorch Dataset class
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── models/                   # Model checkpoints are versioned/managed via W&B Model Registry.
 =======
 ├── models/
 >>>>>>> temp-fix
+=======
+├── models/                   # Model checkpoints are versioned/managed via W&B Model Registry.
+>>>>>>> dc11963 (First Save)
 │   ├── simclr.py             # SimCLR encoder + projection head
 │   ├── mae.py                # MAE encoder + decoder
 │   └── downstream.py         # Linear probe + fine-tune heads
