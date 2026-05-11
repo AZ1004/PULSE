@@ -1,0 +1,28 @@
+[data]  SSL train=624 | eval train=624 | val=78 | test=78
+[model] resnet50  feat_dim=2048  proj=2048→128
+[model] 28.0M parameters
+[optim] LARS  lr=0.3000
+[smoke_test] Overriding epochs → 1
+C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 506, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 467, in main
+    train_metrics = train_one_epoch(
+                    ^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 218, in train_one_epoch
+    loss  = criterion(z1, z2)
+            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\losses\nt_xent.py", line 57, in forward
+    pos_idx = torch.cat([...]).to(torch.device)
+              ^^^^^^^^^^^^^^^^
+TypeError: expected Tensor as element 0 in argument 0, but got ellipsis

@@ -1,0 +1,24 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2026-05-11T21:01:27.124867Z",
+  "args":  [
+    "--data_dir",
+    "C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT",
+    "--epochs",
+    "1",
+    "--batch_size",
+    "32",
+    "--smoke_test"
+  ],
+  "program":  "-m scripts.train_simclr",
+  "git":  {
+    "remote":  "git@github.com:AZ1004/PULSE.git",
+    "commit":  "cf0219da7ff91c782dabfeaa3b439cd2f36bef92"
+  },
+  "email":  "asmaazizaan@gmail.com",
+  "root":  "C:\\Users\\asmaa\\PULSE",
+  "host":  "Asmaa_Omen",
+  "executable":  "C:\\Users\\asmaa\\PULSE\\.venv\\Scripts\\python.exe",
+  "writerId":  "uddpbzavis44s14s5sbz1svgll9odxup"
+}

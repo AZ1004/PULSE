@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 487, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 400, in main
+    ssl_loader, eval_tr_ldr, eval_val_ldr = build_loaders(args)
+                                            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 343, in build_loaders
+    full_ssl  = BUSIDatasetSSL(root_dir=args.data_dir) # Removed ssl=True
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BUSIDatasetSSL.__init__() got an unexpected keyword argument 'root_dir'

@@ -1,0 +1,78 @@
+[data]  SSL train=624 | eval train=624 | val=78 | test=78
+[model] resnet50  feat_dim=2048  proj=2048→128
+[model] 28.0M parameters
+[optim] LARS  lr=0.3000
+  [epoch 000 | step 0000/0009]  loss=4.6991
+[epoch 000]  loss=4.7679  lr=0.03000  5 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 001 | step 0000/0009]  loss=4.7199
+[epoch 001]  loss=4.7186  lr=0.06000  4 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 002 | step 0000/0009]  loss=4.7148
+[epoch 002]  loss=4.5935  lr=0.09000  6 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 003 | step 0000/0009]  loss=4.5746
+[epoch 003]  loss=4.4388  lr=0.12000  7 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 004 | step 0000/0009]  loss=4.3412
+[epoch 004]  loss=4.1833  lr=0.15000  5 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 005 | step 0000/0009]  loss=4.1024
+[epoch 005]  loss=4.0024  lr=0.18000  4 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 006 | step 0000/0009]  loss=4.1701
+[epoch 006]  loss=4.0589  lr=0.21000  3 img/s
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 007 | step 0000/0009]  loss=3.9959
+[epoch 007]  loss=3.9811  lr=0.24000  4 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 008 | step 0000/0009]  loss=3.8604
+[epoch 008]  loss=3.9387  lr=0.27000  4 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 009 | step 0000/0009]  loss=3.9907
+[epoch 009]  loss=3.9640  lr=0.30000  3 img/s
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+[linear eval] Extracting features…
+[linear eval @ epoch 9]  val_acc=0.4103
+  [epoch 010 | step 0000/0009]  loss=4.0073
+[epoch 010]  loss=3.9798  lr=0.30000  5 img/s
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+  [epoch 011 | step 0000/0009]  loss=3.9233
+[epoch 011]  loss=3.9697  lr=0.29998  4 img/s
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 509, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 470, in main
+    train_metrics = train_one_epoch(
+                    ^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_simclr.py", line 199, in train_one_epoch
+    for step, batch in enumerate(loader):
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1402, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\AppData\Local\Programs\Python\Python311\Lib\queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "C:\Users\asmaa\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

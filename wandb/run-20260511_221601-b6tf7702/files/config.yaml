@@ -1,0 +1,109 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            9bgw460pkzo1xsnnct3wxfabk0w6ra1h:
+                args:
+                    - --data_dir
+                    - C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+                    - --epochs
+                    - "1"
+                    - --batch_size
+                    - "32"
+                    - --smoke_test
+                cpu_count: 10
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1022936215552"
+                        used: "777772589056"
+                email: asmaazizaan@gmail.com
+                executable: C:\Users\asmaa\PULSE\.venv\Scripts\python.exe
+                git:
+                    commit: cf0219da7ff91c782dabfeaa3b439cd2f36bef92
+                    remote: git@github.com:AZ1004/PULSE.git
+                gpu: NVIDIA GeForce RTX 4050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 2560
+                      memoryTotal: "6439305216"
+                      name: NVIDIA GeForce RTX 4050 Laptop GPU
+                      uuid: GPU-5d1c9467-11c7-4ee8-6b7d-1a0cbc328156
+                host: Asmaa_Omen
+                memory:
+                    total: "16858472448"
+                os: Windows-10-10.0.26200-SP0
+                program: -m scripts.train_simclr
+                python: CPython 3.11.4
+                root: C:\Users\asmaa\PULSE
+                startedAt: "2026-05-11T21:16:01.327248Z"
+                writerId: 9bgw460pkzo1xsnnct3wxfabk0w6ra1h
+        m: []
+        python_version: 3.11.4
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 13
+                - 15
+                - 16
+            "4": 3.11.4
+            "5": 0.26.0
+            "8":
+                - 3
+            "12": 0.26.0
+            "13": windows-amd64
+backbone:
+    value: resnet50
+batch_size:
+    value: 32
+ckpt:
+    value: null
+ckpt_dir:
+    value: checkpoints/simclr
+data_dir:
+    value: C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+epochs:
+    value: 1
+eval_epochs:
+    value: 100
+eval_every:
+    value: 20
+eval_lr:
+    value: 0.1
+eval_only:
+    value: false
+lr:
+    value: 0.6
+min_lr:
+    value: 0
+no_wandb:
+    value: false
+num_workers:
+    value: 4
+proj_dim:
+    value: 128
+proj_hidden:
+    value: 2048
+resume:
+    value: null
+seed:
+    value: 42
+smoke_test:
+    value: true
+temperature:
+    value: 0.5
+wandb_project:
+    value: PULSE
+wandb_run:
+    value: null
+warmup_epochs:
+    value: 10
+weight_decay:
+    value: 0.0001

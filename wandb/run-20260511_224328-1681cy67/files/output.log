@@ -1,0 +1,13 @@
+[data]  SSL train=624 | eval train=624 | val=78 | test=78
+[model] resnet50  feat_dim=2048  proj=2048→128
+[model] 28.0M parameters
+[optim] LARS  lr=0.3000
+[smoke_test] Overriding epochs → 1
+  [epoch 000 | step 0000/0019]  loss=4.0536
+[epoch 000]  loss=4.0607  lr=0.03000  16 img/s
+[ckpt] saved → checkpoints/simclr\simclr_best.pt
+[ckpt] saved → checkpoints/simclr\simclr_latest.pt
+[linear eval] Extracting features…
+[linear eval @ epoch 0]  val_acc=0.5128
+
+[done]  best_loss=4.0607
