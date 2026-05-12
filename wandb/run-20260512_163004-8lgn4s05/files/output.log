@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 731, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 595, in main
+    ssl_loader, eval_tr_ldr, eval_val_ldr = build_loaders(args)
+                                            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 536, in build_loaders
+    full_ssl  = BUSIDataset(args.data_dir, transform=ssl_transform_wrapper)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\data\dataset.py", line 87, in __init__
+    all_samples = _collect_samples(self.root)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\data\dataset.py", line 33, in _collect_samples
+    raise FileNotFoundError(f"Expected class folder not found: {class_dir}")
+FileNotFoundError: Expected class folder not found: data\BUSI\benign

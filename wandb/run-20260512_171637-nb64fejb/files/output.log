@@ -1,0 +1,18 @@
+[data]  SSL train=624 | eval train=624 | val=78 | test=78
+[data]  micro_bs=64  accum_steps=4  effective_bs=256
+[model] resnet50  feat_dim=2048  proj=2048->128  28.0M params
+[optim] LARS  lr=0.3000  effective_bs=256
+C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py:617: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler    = torch.cuda.amp.GradScaler() if device.type == "cuda" else None
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 732, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 657, in main
+    train_metrics, loss_ema = train_one_epoch(
+                              ^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 306, in train_one_epoch
+    view1 = view1.to(device, non_blocking=True)
+            ^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 133, in <module>
+    train_ssl()
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 83, in train_ssl
+    for i, (imgs, _) in enumerate(train_loader):
+                                  ^^^^^^^^^^^^
+NameError: name 'train_loader' is not defined

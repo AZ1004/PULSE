@@ -1,0 +1,21 @@
+2026-05-12 16:22:12,763 INFO    MainThread:37752 [wandb_setup.py:_flush():81] Current SDK version is 0.26.0
+2026-05-12 16:22:12,763 INFO    MainThread:37752 [wandb_setup.py:_flush():81] Configure stats pid to 37752
+2026-05-12 16:22:12,763 INFO    MainThread:37752 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-12 16:22:12,763 INFO    MainThread:37752 [wandb_init.py:setup_run_log_directory():721] Logging user logs to C:\Users\asmaa\PULSE\wandb\run-20260512_162212-ghdpgw8j\logs\debug.log
+2026-05-12 16:22:12,763 INFO    MainThread:37752 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to C:\Users\asmaa\PULSE\wandb\run-20260512_162212-ghdpgw8j\logs\debug-internal.log
+2026-05-12 16:22:12,764 INFO    MainThread:37752 [wandb_init.py:init():848] calling init triggers
+2026-05-12 16:22:12,764 INFO    MainThread:37752 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'data_dir': 'data/BUSI', 'ckpt_dir': 'checkpoints/simclr', 'resume': None, 'ckpt': None, 'backbone': 'resnet50', 'proj_dim': 128, 'proj_hidden': 2048, 'epochs': 20, 'batch_size': 64, 'accum_steps': 4, 'lr': 0.3, 'weight_decay': 0.0001, 'temperature': 0.5, 'warmup_epochs': 10, 'min_lr': 0.0, 'loss_ema': 0.98, 'eval_every': 20, 'eval_epochs': 100, 'eval_lr': 0.1, 'eval_only': False, 'low_label': 1.0, 'patience': 0, 'grad_clip': 1.0, 'num_workers': 4, 'seed': 42, 'compile': False, 'smoke_test': False, 'wandb_project': 'PULSE', 'wandb_run': None, 'no_wandb': False, 'effective_batch_size': 256, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', '_wandb': {}}
+2026-05-12 16:22:12,764 INFO    MainThread:37752 [wandb_init.py:init():896] starting backend
+2026-05-12 16:22:15,130 INFO    MainThread:37752 [wandb_init.py:init():911] sending inform_init request
+2026-05-12 16:22:15,168 INFO    MainThread:37752 [wandb_init.py:init():919] backend started and connected
+2026-05-12 16:22:15,208 INFO    MainThread:37752 [wandb_init.py:init():989] updated telemetry
+2026-05-12 16:22:15,287 INFO    MainThread:37752 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-05-12 16:22:17,582 INFO    MainThread:37752 [wandb_init.py:init():1058] starting run threads in backend
+2026-05-12 16:22:17,662 INFO    MainThread:37752 [wandb_run.py:_console_start():2542] atexit reg
+2026-05-12 16:22:17,662 INFO    MainThread:37752 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-05-12 16:22:17,662 INFO    MainThread:37752 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-05-12 16:22:17,662 INFO    MainThread:37752 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-05-12 16:22:17,679 INFO    MainThread:37752 [wandb_init.py:init():1098] run started, returning control to user process
+2026-05-12 16:22:17,690 INFO    wandb-AsyncioManager-main:37752 [service_client.py:_forward_responses():134] Reached EOF.
+2026-05-12 16:22:17,690 INFO    wandb-AsyncioManager-main:37752 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.

@@ -53,22 +53,22 @@ class NTXentLoss(nn.Module):
         # ── Step 4: Build positive pair indices ───────────────────────────────
         # For index i in [0, N):    positive is at index i + N  (its j-view)
         # For index i in [N, 2N):   positive is at index i - N  (its i-view)
-        device = z_i.device
+        """device = z_i.device
         # Create indices: [N, N+1, ..., 2N-1, 0, 1, ..., N-1]
         pos_idx = torch.cat([
             torch.arange(N, 2 * N), 
             torch.arange(0, N)
         ]).to(z_i.device) # Use the device from the input tensor automatically
         
-        """pos_idx = torch.cat([
+        """
+        pos_idx = torch.cat([
             torch.arange(N, 2 * N),   # i-views → j-views
             torch.arange(0, N),        # j-views → i-views
         ]).to(self.device)             # [2N]
-"""
+
         # ── Step 5: Mask out self-similarity (diagonal) ───────────────────────
         # An embedding must not be its own positive/negative.
         mask = torch.eye(2 * N, dtype=torch.bool).to(z_i.device)
-        # mask = torch.eye(2 * N, dtype=torch.bool).to(self.device)
         sim = sim.masked_fill(mask, float("-inf"))  # [2N, 2N]
 
         # ── Step 6: Cross-entropy over the 2N classification problems ─────────

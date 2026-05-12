@@ -1,0 +1,48 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2026-05-12T13:04:14.790047Z",
+  "args":  [
+    "--epochs",
+    "20",
+    "--batch_size",
+    "64",
+    "--accum_steps",
+    "4",
+    "--lr",
+    "0.3"
+  ],
+  "program":  "-m scripts.train_ssl_v2",
+  "git":  {
+    "remote":  "git@github.com:AZ1004/PULSE.git",
+    "commit":  "c33195d81e394a5f824585f491ad95744dc5bdb7"
+  },
+  "email":  "asmaazizaan@gmail.com",
+  "root":  "C:\\Users\\asmaa\\PULSE",
+  "host":  "Asmaa_Omen",
+  "executable":  "C:\\Users\\asmaa\\PULSE\\.venv\\Scripts\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1022936215552",
+      "used":  "784132145152"
+    }
+  },
+  "memory":  {
+    "total":  "16858472448"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal":  "6439305216",
+      "cudaCores":  2560,
+      "architecture":  "Ada",
+      "uuid":  "GPU-5d1c9467-11c7-4ee8-6b7d-1a0cbc328156"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "irv0l8y2dd3m2divhbcosf3i69n3pbvc"
+}

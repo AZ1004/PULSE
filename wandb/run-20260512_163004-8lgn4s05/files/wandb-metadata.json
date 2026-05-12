@@ -1,0 +1,25 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.4",
+  "startedAt":  "2026-05-12T15:30:04.527591Z",
+  "args":  [
+    "--epochs",
+    "20",
+    "--batch_size",
+    "64",
+    "--accum_steps",
+    "4",
+    "--lr",
+    "0.3"
+  ],
+  "program":  "-m scripts.train_ssl_v2",
+  "git":  {
+    "remote":  "git@github.com:AZ1004/PULSE.git",
+    "commit":  "c33195d81e394a5f824585f491ad95744dc5bdb7"
+  },
+  "email":  "asmaazizaan@gmail.com",
+  "root":  "C:\\Users\\asmaa\\PULSE",
+  "host":  "Asmaa_Omen",
+  "executable":  "C:\\Users\\asmaa\\PULSE\\.venv\\Scripts\\python.exe",
+  "writerId":  "3iker9kgjrzp5kys90ssm5zbpv3e0pvk"
+}

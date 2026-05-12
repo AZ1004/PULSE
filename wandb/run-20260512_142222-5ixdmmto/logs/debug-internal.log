@@ -1,0 +1,19 @@
+{"time":"2026-05-12T14:22:24.5253599+01:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-05-12T14:22:24.5439385+01:00","level":"INFO","msg":"stream: starting","core version":"0.26.0"}
+{"time":"2026-05-12T14:22:26.9697613+01:00","level":"INFO","msg":"stream: created new stream","id":"5ixdmmto"}
+{"time":"2026-05-12T14:22:26.9713736+01:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-05-12T14:22:26.973602+01:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-05-12T14:22:26.9741569+01:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-05-12T14:22:26.9741569+01:00","level":"INFO","msg":"writer: started","stream_id":"5ixdmmto"}
+{"time":"2026-05-12T14:22:37.8418958+01:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-05-12T14:22:37.8439571+01:00","level":"INFO","msg":"stream: closing"}
+{"time":"2026-05-12T14:22:57.4754223+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-05-12T14:23:33.0784658+01:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/asmaazizaan-bcs/PULSE_SSL/5ixdmmto/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-05-12T14:23:36.3402062+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-05-12T14:23:36.3402062+01:00","level":"INFO","msg":"filestream: sending request","total_files":0}
+{"time":"2026-05-12T14:23:36.8108228+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-05-12T14:23:36.8108228+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"console_offset":0,"console_lines":9,"uploaded_len":5,"complete":true,"exit_code":1}
+{"time":"2026-05-12T14:23:38.747225+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-05-12T14:23:38.747225+01:00","level":"INFO","msg":"handler: closed"}
+{"time":"2026-05-12T14:23:38.7496705+01:00","level":"INFO","msg":"sender: closed"}
+{"time":"2026-05-12T14:23:38.7496705+01:00","level":"INFO","msg":"stream: closed"}

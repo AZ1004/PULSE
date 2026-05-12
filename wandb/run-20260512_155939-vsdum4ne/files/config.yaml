@@ -1,0 +1,109 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            fjwr8vrvpz7f3an6wju35uuriawfhk5h:
+                args:
+                    - --epochs
+                    - "20"
+                    - --batch_size
+                    - "64"
+                    - --accum_steps
+                    - "4"
+                    - --lr
+                    - "0.3"
+                email: asmaazizaan@gmail.com
+                executable: C:\Users\asmaa\PULSE\.venv\Scripts\python.exe
+                git:
+                    commit: c33195d81e394a5f824585f491ad95744dc5bdb7
+                    remote: git@github.com:AZ1004/PULSE.git
+                host: Asmaa_Omen
+                os: Windows-10-10.0.26200-SP0
+                program: -m scripts.train_ssl_v2
+                python: CPython 3.11.4
+                root: C:\Users\asmaa\PULSE
+                startedAt: "2026-05-12T14:59:39.377708Z"
+                writerId: fjwr8vrvpz7f3an6wju35uuriawfhk5h
+        m: []
+        python_version: 3.11.4
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 13
+                - 15
+                - 16
+            "4": 3.11.4
+            "5": 0.26.0
+            "8":
+                - 3
+            "12": 0.26.0
+            "13": windows-amd64
+accum_steps:
+    value: 4
+backbone:
+    value: resnet50
+batch_size:
+    value: 64
+ckpt:
+    value: null
+ckpt_dir:
+    value: checkpoints/simclr
+compile:
+    value: false
+data_dir:
+    value: data/BUSI
+effective_batch_size:
+    value: 256
+epochs:
+    value: 20
+eval_epochs:
+    value: 100
+eval_every:
+    value: 20
+eval_lr:
+    value: 0.1
+eval_only:
+    value: false
+gpu:
+    value: NVIDIA GeForce RTX 4050 Laptop GPU
+grad_clip:
+    value: 1
+loss_ema:
+    value: 0.98
+low_label:
+    value: 1
+lr:
+    value: 0.3
+min_lr:
+    value: 0
+no_wandb:
+    value: false
+num_workers:
+    value: 4
+patience:
+    value: 0
+proj_dim:
+    value: 128
+proj_hidden:
+    value: 2048
+resume:
+    value: null
+seed:
+    value: 42
+smoke_test:
+    value: false
+temperature:
+    value: 0.5
+wandb_project:
+    value: PULSE
+wandb_run:
+    value: null
+warmup_epochs:
+    value: 10
+weight_decay:
+    value: 0.0001

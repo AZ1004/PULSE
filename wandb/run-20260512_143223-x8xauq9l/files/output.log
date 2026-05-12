@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 153, in <module>
+    train_ssl()
+  File "C:\Users\asmaa\PULSE\scripts\train_ssl_v2.py", line 103, in train_ssl
+    for i, (imgs, _) in enumerate(train_loader):
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\_utils.py", line 715, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 398, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 211, in collate
+    return [
+           ^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 212, in <listcomp>
+    collate(samples, collate_fn_map=collate_fn_map)
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 240, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'PIL.Image.Image'>
