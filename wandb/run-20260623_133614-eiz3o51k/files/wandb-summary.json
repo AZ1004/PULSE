@@ -1,0 +1,1 @@
+{"_timestamp":1.7822183581773489e+09,"_step":22,"baseline/fold1/acc":0.7115384615384616,"baseline/fold1/specificity":0.850083353091654,"epoch":22,"_runtime":182,"baseline/fold1/auc":0.8521738748757087,"_wandb":{"runtime":182},"baseline/fold1/sensitivity":0.7248307246507414}

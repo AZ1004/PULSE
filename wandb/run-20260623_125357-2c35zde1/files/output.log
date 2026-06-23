@@ -1,0 +1,16 @@
+[baseline] Random init (scratch)
+Fold 1 | AUC: 0.8590 | Acc: 0.7756 | Sens: 0.7183 | Spec: 0.8622
+[baseline] Random init (scratch)
+Fold 2 | AUC: 0.9038 | Acc: 0.7500 | Sens: 0.7144 | Spec: 0.8583
+[baseline] Random init (scratch)
+Fold 3 | AUC: 0.8866 | Acc: 0.7244 | Sens: 0.6712 | Spec: 0.8376
+[baseline] Random init (scratch)
+Fold 4 | AUC: 0.8450 | Acc: 0.7308 | Sens: 0.6363 | Spec: 0.8392
+[baseline] Random init (scratch)
+Fold 5 | AUC: 0.8216 | Acc: 0.6859 | Sens: 0.6318 | Spec: 0.8147
+
+Baseline results (Random init, 10% labels):
+  AUC  : 0.8632 ± 0.0292
+  Acc  : 0.7333 ± 0.0297
+  Sens : 0.6744 ± 0.0369
+  Spec : 0.8424 ± 0.0170

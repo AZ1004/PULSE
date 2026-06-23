@@ -1,0 +1,21 @@
+2026-06-23 13:39:58,675 INFO    MainThread:28248 [wandb_setup.py:_flush():81] Current SDK version is 0.26.0
+2026-06-23 13:39:58,675 INFO    MainThread:28248 [wandb_setup.py:_flush():81] Configure stats pid to 28248
+2026-06-23 13:39:58,675 INFO    MainThread:28248 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-23 13:39:58,675 INFO    MainThread:28248 [wandb_init.py:setup_run_log_directory():721] Logging user logs to C:\Users\asmaa\PULSE\wandb\run-20260623_133958-3a1avvrt\logs\debug.log
+2026-06-23 13:39:58,676 INFO    MainThread:28248 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to C:\Users\asmaa\PULSE\wandb\run-20260623_133958-3a1avvrt\logs\debug-internal.log
+2026-06-23 13:39:58,677 INFO    MainThread:28248 [wandb_init.py:init():848] calling init triggers
+2026-06-23 13:39:58,677 INFO    MainThread:28248 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'data_root': 'C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT', 'image_size': 224, 'batch_size': 32, 'epochs': 50, 'lr': 0.0001, 'n_folds': 5, 'device': 'cuda', 'wandb_project': 'PULSE-SSL', 'pretrained': False, 'label_frac': 0.1, '_wandb': {}}
+2026-06-23 13:39:58,677 INFO    MainThread:28248 [wandb_init.py:init():896] starting backend
+2026-06-23 13:40:01,003 INFO    MainThread:28248 [wandb_init.py:init():911] sending inform_init request
+2026-06-23 13:40:01,055 INFO    MainThread:28248 [wandb_init.py:init():919] backend started and connected
+2026-06-23 13:40:01,093 INFO    MainThread:28248 [wandb_init.py:init():989] updated telemetry
+2026-06-23 13:40:01,158 INFO    MainThread:28248 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-06-23 13:40:02,135 INFO    MainThread:28248 [wandb_init.py:init():1058] starting run threads in backend
+2026-06-23 13:40:02,314 INFO    MainThread:28248 [wandb_run.py:_console_start():2542] atexit reg
+2026-06-23 13:40:02,315 INFO    MainThread:28248 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-06-23 13:40:02,315 INFO    MainThread:28248 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-06-23 13:40:02,315 INFO    MainThread:28248 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-06-23 13:40:02,337 INFO    MainThread:28248 [wandb_init.py:init():1098] run started, returning control to user process
+2026-06-23 13:52:33,250 INFO    wandb-AsyncioManager-main:28248 [service_client.py:_forward_responses():134] Reached EOF.
+2026-06-23 13:52:33,250 INFO    wandb-AsyncioManager-main:28248 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.

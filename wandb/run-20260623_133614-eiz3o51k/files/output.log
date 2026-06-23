@@ -1,0 +1,153 @@
+[baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[ 0 88  0]
+ [ 0 42  0]
+ [ 0 26  0]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[ 0 88  0]
+ [ 0 42  0]
+ [ 0 26  0]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[44 44  0]
+ [ 6 36  0]
+ [ 2 24  0]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[85  3  0]
+ [34  8  0]
+ [25  1  0]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[11  4 73]
+ [ 3 11 28]
+ [ 0  1 25]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[77 11  0]
+ [18 23  1]
+ [17  7  2]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[79  0  9]
+ [29  2 11]
+ [15  0 11]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[46  1 41]
+ [ 9 14 19]
+ [ 3  0 23]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[43  7 38]
+ [ 5 21 16]
+ [ 3  1 22]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[42 45  1]
+ [ 1 40  1]
+ [ 3 16  7]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[77 11  0]
+ [21 21  0]
+ [20  6  0]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[85  1  2]
+ [22 19  1]
+ [12  3 11]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[86  0  2]
+ [26 13  3]
+ [12  1 13]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[83  3  2]
+ [31  9  2]
+ [23  1  2]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[72 12  4]
+ [16 24  2]
+ [11  3 12]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[73 15  0]
+ [11 31  0]
+ [15  5  6]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[76 10  2]
+ [14 26  2]
+ [10  3 13]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[70 11  7]
+ [10 30  2]
+ [ 9  2 15]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[65 21  2]
+ [10 31  1]
+ [12  4 10]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[66 13  9]
+ [ 9 30  3]
+ [ 9  2 15]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[71 14  3]
+ [15 25  2]
+ [ 9  5 12]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[62 25  1]
+ [ 6 36  0]
+ [ 6 10 10]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[60 16 12]
+ [ 7 32  3]
+ [ 5  2 19]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\train_baseline.py", line 183, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\train_baseline.py", line 123, in main
+    for imgs, labels in train_loader:
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\train_baseline.py", line 93, in __getitem__
+    img, label = self.subset[i]
+                 ~~~~~~~~~~~^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\torch\utils\data\dataset.py", line 412, in __getitem__
+    return self.dataset[self.indices[idx]]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\data\dataset.py", line 137, in __getitem__
+    image = self._load_image(sample["image_path"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\data\dataset.py", line 109, in _load_image
+    return Image.open(path).convert("RGB")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\PIL\Image.py", line 1070, in convert
+    self.load()
+  File "C:\Users\asmaa\PULSE\.venv\Lib\site-packages\PIL\ImageFile.py", line 412, in load
+    n, err_code = decoder.decode(b)
+                  ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
