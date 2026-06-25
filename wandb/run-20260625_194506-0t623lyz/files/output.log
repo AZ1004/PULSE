@@ -1,0 +1,22 @@
+BUSIDataset | root: C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+  Total samples : 780
+  benign       : 437
+  malignant    : 210
+  normal       : 133
+
+── Label fraction: 100% ──────────────────────
+[load_encoder] Missing keys (expected if projector-only): ['projector.4.running_mean', 'projector.4.running_var']
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 299, in <module>
+    main()
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 275, in main
+    summary = run_kfold(args, dataset, label_frac=frac)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 219, in run_kfold
+    train_downstream(model, train_loader, optimizer,
+  File "C:\Users\asmaa\PULSE\scripts\evaluate.py", line 133, in train_downstream
+    total_loss += loss.item()
+                  ^^^^^^^^^^^
+KeyboardInterrupt

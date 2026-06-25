@@ -1,0 +1,9 @@
+2026-06-25 19:48:59,478 INFO    MainThread:11568 [wandb_setup.py:_flush():81] Current SDK version is 0.26.0
+2026-06-25 19:48:59,479 INFO    MainThread:11568 [wandb_setup.py:_flush():81] Configure stats pid to 11568
+2026-06-25 19:48:59,479 INFO    MainThread:11568 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-25 19:48:59,480 INFO    MainThread:11568 [wandb_init.py:setup_run_log_directory():721] Logging user logs to C:\Users\asmaa\PULSE\wandb\run-20260625_194859-jls6osmj\logs\debug.log
+2026-06-25 19:48:59,480 INFO    MainThread:11568 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to C:\Users\asmaa\PULSE\wandb\run-20260625_194859-jls6osmj\logs\debug-internal.log
+2026-06-25 19:48:59,481 INFO    MainThread:11568 [wandb_init.py:init():848] calling init triggers
+2026-06-25 19:48:59,481 INFO    MainThread:11568 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'checkpoint': 'checkpoints/simclr/simclr_best.pt', 'data_root': 'C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT', 'mode': 'fine_tune', 'image_size': 224, 'batch_size': 64, 'epochs': 50, 'lr': 0.001, 'n_folds': 5, 'label_fracs': [1.0], 'device': 'cuda', 'wandb_project': 'PULSE-SSL', '_wandb': {}}
+2026-06-25 19:48:59,481 INFO    MainThread:11568 [wandb_init.py:init():896] starting backend

@@ -1,1 +1,41 @@
 [baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[69 13  6]
+ [12 28  2]
+ [ 4  4 18]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+Fold 1 | AUC: 0.8967 | Acc: 0.7372 | Sens: 0.7144 | Spec: 0.8513
+[baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[75  6  7]
+ [15 23  4]
+ [ 7  3 16]]
+  Class distribution in this val fold: benign=88, malignant=42, normal=26
+Fold 2 | AUC: 0.8530 | Acc: 0.7308 | Sens: 0.6718 | Spec: 0.8376
+[baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[79  5  3]
+ [12 28  2]
+ [11  2 14]]
+  Class distribution in this val fold: benign=87, malignant=42, normal=27
+Fold 3 | AUC: 0.8998 | Acc: 0.7756 | Sens: 0.6977 | Spec: 0.8555
+[baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[68 15  4]
+ [ 8 34  0]
+ [11  8  8]]
+  Class distribution in this val fold: benign=87, malignant=42, normal=27
+Fold 4 | AUC: 0.8465 | Acc: 0.7051 | Sens: 0.6291 | Spec: 0.8306
+[baseline] Random init (scratch)
+  Confusion matrix (rows=true, cols=pred) [benign, malignant, normal]:
+  [[75  9  3]
+ [11 28  3]
+ [ 9  1 17]]
+  Class distribution in this val fold: benign=87, malignant=42, normal=27
+Fold 5 | AUC: 0.8848 | Acc: 0.7692 | Sens: 0.7195 | Spec: 0.8586
+
+Baseline results (Random init, 100% labels):
+  AUC  : 0.8762 ± 0.0222
+  Acc  : 0.7436 ± 0.0260
+  Sens : 0.6865 ± 0.0332
+  Spec : 0.8467 ± 0.0108

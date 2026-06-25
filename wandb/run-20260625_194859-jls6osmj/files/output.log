@@ -1,0 +1,8 @@
+BUSIDataset | root: C:\Users\asmaa\Desktop\BUSI\Dataset_BUSI_with_GT
+  Total samples : 780
+  benign       : 437
+  malignant    : 210
+  normal       : 133
+
+── Label fraction: 100% ──────────────────────
+[load_encoder] Missing keys (expected if projector-only): ['projector.4.running_mean', 'projector.4.running_var']

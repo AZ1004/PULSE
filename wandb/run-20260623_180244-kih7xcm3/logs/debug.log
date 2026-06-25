@@ -17,3 +17,8 @@ config: {'data_root': 'C:\\Users\\asmaa\\Desktop\\BUSI\\Dataset_BUSI_with_GT', '
 2026-06-23 18:02:57,772 INFO    MainThread:26332 [wandb_run.py:_redirect():2460] Wrapping output streams.
 2026-06-23 18:02:57,773 INFO    MainThread:26332 [wandb_run.py:_redirect():2483] Redirects installed.
 2026-06-23 18:02:57,791 INFO    MainThread:26332 [wandb_init.py:init():1098] run started, returning control to user process
+2026-06-23 19:13:13,746 INFO    MainThread:26332 [wandb_run.py:_finish():2309] finishing run asmaazizaan-bcs/PULSE-SSL/kih7xcm3
+2026-06-23 19:13:13,781 INFO    MainThread:26332 [wandb_run.py:_atexit_cleanup():2508] got exitcode: 0
+2026-06-23 19:13:13,805 INFO    MainThread:26332 [wandb_run.py:_restore():2490] restore
+2026-06-23 19:13:13,807 INFO    MainThread:26332 [wandb_run.py:_restore():2496] restore done
+2026-06-23 19:13:16,122 INFO    MainThread:26332 [wandb_run.py:_footer_sync_info():3886] logging synced files

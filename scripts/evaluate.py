@@ -1,5 +1,6 @@
 # scripts/evaluate.py
 
+import os
 import argparse
 import numpy as np
 import torch
@@ -80,7 +81,7 @@ def load_encoder(checkpoint_path: str, device: str) -> nn.Module:
     from scripts.train_ssl_v2 import SimCLREncoder
     """Load SimCLR encoder (SimCLREncoder from train_ssl_v2.py), strip projector."""
     model = SimCLREncoder(backbone="resnet50", proj_hidden=2048, proj_dim=128)
-    ckpt  = torch.load(checkpoint_path, map_location=device)
+    ckpt  = torch.load(checkpoint_path, map_location=device, weights_only=True)
 
     state = ckpt.get("model", ckpt)
 
@@ -217,7 +218,14 @@ def run_kfold(args, dataset: BUSIDataset,
         for epoch in range(args.epochs):
             train_downstream(model, train_loader, optimizer,
                              criterion, args.device, freeze)
-
+            
+        # ─── FIXED VARIABLE REFERENCE AND INDENTATION ───
+        if args.label_frac > 0.99:  # Safeguarded check using args.
+            ckpt_dir = f"checkpoints/simclr_{args.mode}"
+            os.makedirs(ckpt_dir, exist_ok=True)
+            torch.save({"model": model.state_dict()}, f"{ckpt_dir}/fold{fold+1}_100pct.pt")
+            print(f"\n[ckpt] SUCCESSFUL SAVE -> {ckpt_dir}/fold{fold+1}_100pct.pt\n")
+            
         labels, preds, probs = evaluate_downstream(
             model, val_loader, args.device)
         metrics = compute_metrics(labels, preds, probs)
