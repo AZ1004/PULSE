@@ -25,7 +25,7 @@ Self-supervised learning is often assumed to provide its largest advantage when 
 
 We argue this reflects a property of the BUSI dataset itself — strong, low-level, class-discriminative signal that conventional supervised learning exploits immediately, even with very little data — rather than a failure of contrastive pretraining. See the paper for full discussion and a proposed mechanism.
 
-![Label efficiency curve](efficiency_curve.png)
+![Label efficiency curve](PULSE/efficiency_curve.png)
 
 ---
 
